@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSDate+StringDate.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSDate *dateNow = [NSDate date];
+    
+    NSLog(@"Date is %@", [dateNow convertDateToString]);
 }
 
 
